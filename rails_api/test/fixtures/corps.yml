@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  descrip: MyString
+  coupon_rate: 1
+  yield: 1
+  sp_rating: MyString
+  moodys_rating: MyString
+  available_lot: 1
+
+two:
+  name: MyString
+  descrip: MyString
+  coupon_rate: 1
+  yield: 1
+  sp_rating: MyString
+  moodys_rating: MyString
+  available_lot: 1
