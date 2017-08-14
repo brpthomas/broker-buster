@@ -12,7 +12,8 @@ class SignUp extends Component {
         name: '',
         email: '',
         password: '',
-        password_confirmation: ''
+        password_confirmation: '',
+        balance: ''
       }
     }
   }
@@ -67,6 +68,12 @@ class SignUp extends Component {
             name='password_confirmation' type='password'
             onChange={e => this.changeInput(e, 'password_confirmation')}
           />
+          <label htmlFor='balance'>Amount Deposit</label>
+          <input value={this.state.inputs.balance}
+            id='balance' name='balance' type='balance'
+            onChange={e => this.changeInput(e, 'balance')}
+          />
+
 
           <div className="form-buttons">
             <button type="submit" className="form-button">Sign Up</button>
