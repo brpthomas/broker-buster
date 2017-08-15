@@ -1,9 +1,7 @@
 import React, { Component } from 'react'; 
-import BuyCorp from './BuyCorp';
-import $ from 'jquery';
 
 
-class CorpList extends Component {
+class GetId extends Component {
 	constructor(props) {
 		super(props); 
 		this.state = {
@@ -12,7 +10,7 @@ class CorpList extends Component {
 		};
 	}
 	componentDidMount() {
-		console.log('~~~ CorpList mounted.  this.props.user is: ' + this.props.user)
+		// console.log('~~~ CorpList mounted.  this.props.user is: ' + this.props.user)
 		$.ajax({
 			url: "http://localhost:3000/corps/"
 		}).done((data)=> {
@@ -29,7 +27,7 @@ class CorpList extends Component {
 	render() {
 		const corps = this.state.corps.map((corpData, i)=> {
 		return (
-			<li key={i}>
+			<div className='bondlist' key={i}>
 				<span className="name"
 						onClick={(e) => {this.clickHandler(e, corpData.id)}}
 				>
@@ -42,7 +40,7 @@ class CorpList extends Component {
 				<span className="info"> 
 				<p>Description: {corpData.descrip}, CUSIP: {corpData.cusip}, Coupon Rate:{corpData.coupon_rate}, Yield: {corpData.yield}, S&P Rating: {corpData.sp_rating}, Moody's Rating: {corpData.moodys_rating}, Maturity: {corpData.maturity}; </p>
 				</span>
-				</li> 
+				</div> 
 
 
 		); 
@@ -51,7 +49,6 @@ class CorpList extends Component {
 		let shownCorpElement = null; 
 		if(this.state.shownCorpElement) {
 			let shownCorp = this.state.corps.filter((corpData) => {
-				return corpData.name === this.state.shownCorpName;
 				return corpData.id === this.state.shownCorpId; 
 			})[0]; 
 			<div>
@@ -69,7 +66,8 @@ class CorpList extends Component {
 			{shownCorpElement}
 			{this.renderForm}
 			<ul>
-			<BuyCorp id={this.state.shownCorpId} user={this.props.user}/>
+			<BuyCorp id={this.state.shownCorpId} user={this.props.user} />
+
 			{this.state.shownCorpId ? [] : corps}
 			</ul> 
 			</div> 
@@ -82,4 +80,4 @@ class CorpList extends Component {
 
 }
 
-export default CorpList; 
+export default GetId; 

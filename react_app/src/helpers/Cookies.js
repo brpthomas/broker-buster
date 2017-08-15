@@ -3,7 +3,7 @@ export default {
   // Methods to get and set cookies from W3 Schools
   // https://www.w3schools.com/js/js_cookies.asp
 
-  // get cookie given the cookie's name
+  // get gookie given the cookie's name
   get(cname){
     const name = cname + "=";
     const decodedCookie = decodeURIComponent(document.cookie);

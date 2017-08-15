@@ -18,7 +18,8 @@ User.delete_all
 		"maturity": 2022,
 		"sp_rating":"AA+",
 		"moodys_rating":"Aa1", 
-		"available_lot":1000000
+		"available_lot":5000,
+		
 
 
 	}, 
@@ -31,7 +32,7 @@ User.delete_all
 		"maturity": 2022,
 		"sp_rating":"AAA",
 		"moodys_rating":"Aaa", 
-		"available_lot":1000000
+		"available_lot":5000
 	}, 
 			{
 		"name":"Nike",
@@ -42,7 +43,7 @@ User.delete_all
 		"maturity": 2023,
 		"sp_rating":"AA-",
 		"moodys_rating":"A1", 
-		"available_lot":1000000
+		"available_lot":5000
 	}, 
 			{
 		"name":"Goldman Sachs",
@@ -53,7 +54,7 @@ User.delete_all
 		"maturity": 2024,
 		"sp_rating":"BBB+",
 		"moodys_rating":"A3", 
-		"available_lot":1000000
+		"available_lot":5000
 	}, 
 			{
 		"name":"Target",
@@ -64,7 +65,7 @@ User.delete_all
 		"maturity": 2021,
 		"sp_rating":"A2",
 		"moodys_rating":"A", 
-		"available_lot":1000000
+		"available_lot":5000
 	}, 
 			{
 		"name":"Disney",
@@ -75,7 +76,7 @@ User.delete_all
 		"maturity": 2032,
 		"sp_rating":"A+",
 		"moodys_rating":"A2", 
-		"available_lot":1000000
+		"available_lot":5000
 	}, 
 			{
 		"name":"General Electric",
@@ -86,7 +87,7 @@ User.delete_all
 		"maturity": 2042,
 		"sp_rating":"A1",
 		"moodys_rating":"AA-", 
-		"available_lot":1000000
+		"available_lot":5000
 	}, 
 			{
 		"name":"Intel Corp",
@@ -97,7 +98,7 @@ User.delete_all
 		"maturity": 2032,
 		"sp_rating":"A+",
 		"moodys_rating":"A1", 
-		"available_lot":1000000
+		"available_lot":5000
 	}, 
 			{
 		"name":"McDonalds",
@@ -108,7 +109,7 @@ User.delete_all
 		"maturity": 2037,
 		"sp_rating":"BBB+",
 		"moodys_rating":"Baa1", 
-		"available_lot":1000000
+		"available_lot":5000
 	}, 
 			{
 		"name":"Visa",
@@ -119,7 +120,7 @@ User.delete_all
 		"maturity": 2035,
 		"sp_rating":"A+",
 		"moodys_rating":"A1", 
-		"available_lot":1000000
+		"available_lot":5000
 	}, 
 			{
 		"name":"JP Morgan",
@@ -130,7 +131,7 @@ User.delete_all
 		"maturity": 2024,
 		"sp_rating":"BBB-",
 		"moodys_rating":"BAA3", 
-		"available_lot":1000000
+		"available_lot":5000
 	}, 
 	{
 		"name":"VIACOM",
@@ -141,7 +142,7 @@ User.delete_all
 		"maturity": 2024,
 		"sp_rating":"BBB-",
 		"moodys_rating":"BAA3", 
-		"available_lot":1000000
+		"available_lot":5000
 	}, 
 	{
 		"name":"KOHLS CORP",
@@ -152,7 +153,7 @@ User.delete_all
 		"maturity": 2023,
 		"sp_rating":"BBB-",
 		"moodys_rating":"BAA2", 
-		"available_lot":1000000
+		"available_lot":5000
 	}, 
 		{
 		"name":"FORD Motors",
@@ -163,7 +164,7 @@ User.delete_all
 		"maturity": 2024,
 		"sp_rating":"BBB",
 		"moodys_rating":"BAA2", 
-		"available_lot":1000000
+		"available_lot":5000
 	}, 
 			{
 		"name":"Capital One Financial Corp",
@@ -174,7 +175,7 @@ User.delete_all
 		"maturity": 2024,
 		"sp_rating":"BBB",
 		"moodys_rating":"BAA2", 
-		"available_lot":1000000
+		"available_lot":5000
 	},
 			{
 		"name":"Discover Bank",
@@ -185,7 +186,7 @@ User.delete_all
 		"maturity": 2026,
 		"sp_rating":"BBB",
 		"moodys_rating":"BAA3", 
-		"available_lot":1000000
+		"available_lot":5000
 	},
 			{
 		"name":"Discover Financial Services",
@@ -196,7 +197,7 @@ User.delete_all
 		"maturity": 2025,
 		"sp_rating":"BBB-",
 		"moodys_rating":"N/A", 
-		"available_lot":1000000
+		"available_lot":5000
 	},
 			{
 		"name":"Macy's Holding",
@@ -207,7 +208,7 @@ User.delete_all
 		"maturity": 2022,
 		"sp_rating":"BBB-",
 		"moodys_rating":"BAA3", 
-		"available_lot":1000000
+		"available_lot":5000
 	},
 			{
 		"name":"FORD Motors",
@@ -218,7 +219,7 @@ User.delete_all
 		"maturity": 2024,
 		"sp_rating":"BBB",
 		"moodys_rating":"BAA2", 
-		"available_lot":1000000
+		"available_lot":5000
 	},
 			{
 		"name":"Bank of America",
@@ -229,7 +230,7 @@ User.delete_all
 		"maturity": 2027,
 		"sp_rating":"BBB",
 		"moodys_rating":"BAA3", 
-		"available_lot":1000000
+		"available_lot":5000
 	},
 			{
 		"name":"Goldman Sachs Group",
@@ -240,7 +241,7 @@ User.delete_all
 		"maturity": 2028,
 		"sp_rating":"BBB+",
 		"moodys_rating":"A3", 
-		"available_lot":1000000
+		"available_lot":5000
 	},
 			{
 		"name":"Phillips Co.",
@@ -251,7 +252,7 @@ User.delete_all
 		"maturity": 2029,
 		"sp_rating":"A-",
 		"moodys_rating":"BAA1", 
-		"available_lot":1000000
+		"available_lot":5000
 	},
 			{
 		"name":"Jefferies Group",
@@ -262,7 +263,7 @@ User.delete_all
 		"maturity": 2027,
 		"sp_rating":"BBB-",
 		"moodys_rating":"BAA3", 
-		"available_lot":1000000
+		"available_lot":5000
 	},
 			{
 		"name":"Kroger Co.",
@@ -273,7 +274,7 @@ User.delete_all
 		"maturity": 2024,
 		"sp_rating":"BBB",
 		"moodys_rating":"BAA2", 
-		"available_lot":1000000
+		"available_lot":5000
 	},
 			{
 		"name":"Oneok Inc",
@@ -284,7 +285,7 @@ User.delete_all
 		"maturity": 2047,
 		"sp_rating":"BBB",
 		"moodys_rating":"BAA3", 
-		"available_lot":1000000
+		"available_lot":5000
 	},
 			{
 		"name":"Pitney Bowes Inc.",
@@ -295,7 +296,7 @@ User.delete_all
 		"maturity": 2024,
 		"sp_rating":"BBB-",
 		"moodys_rating":"BAA3", 
-		"available_lot":1000000
+		"available_lot":5000
 	},
 			{
 		"name":"Citi Group",
@@ -306,7 +307,7 @@ User.delete_all
 		"maturity": 2026,
 		"sp_rating":"BBB",
 		"moodys_rating":"BAA3", 
-		"available_lot":1000000
+		"available_lot":5000
 	},
 			{
 		"name":"General Motors",
@@ -317,7 +318,7 @@ User.delete_all
 		"maturity": 2024,
 		"sp_rating":"BBB",
 		"moodys_rating":"BAA3", 
-		"available_lot":1000000
+		"available_lot":5000
 	},
 			{
 		"name":"Time Warner Inc.",
@@ -328,7 +329,7 @@ User.delete_all
 		"maturity": 2027,
 		"sp_rating":"BBB",
 		"moodys_rating":"BAA2", 
-		"available_lot":1000000
+		"available_lot":5000
 	},
 			{
 		"name":"Morgan Stanley",
@@ -339,7 +340,7 @@ User.delete_all
 		"maturity": 2027,
 		"sp_rating":"BBB-",
 		"moodys_rating":"BAA2", 
-		"available_lot":1000000
+		"available_lot":5000
 	}
 
 ].each do |corp|

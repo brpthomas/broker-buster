@@ -38,7 +38,7 @@ class Login extends Component {
   render(){
     return(
       <div className="auth-form">
-        <h2>Log In</h2>
+        <h2>Welcome to Broker-Buster!</h2>
         <form onSubmit={this.login.bind(this)}>
 
           <label htmlFor='email'>Email</label>

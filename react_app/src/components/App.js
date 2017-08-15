@@ -4,7 +4,7 @@ import axios from 'axios';
 import Cookies from '../helpers/Cookies';
 import UserAuth from './UserAuth';
 import Content from './Content';
-import CorpList from './CorpList';
+import NavApp from './NavApp';
 
 class App extends Component {
   constructor(){
@@ -22,7 +22,6 @@ class App extends Component {
 
       // Rails
       url: 'http://localhost:3000',
-      userID: ''
     }
   }
 
@@ -62,8 +61,7 @@ class App extends Component {
     // set a cookie with the user's token
     Cookies.set('token', user.token);
     // set state to have the user and the mode to content
-    this.setState({user: user, mode: 'content', userID: user.id});
-
+    this.setState({user: user, mode: 'content'});
   }
 
   // method to log out
@@ -79,7 +77,7 @@ class App extends Component {
     if(this.state.mode === 'loading'){
       return(
         <div className="loading">
-          <img src="https://s-media-cache-ak0.pinimg.com/originals/8b/a8/ce/8ba8ce24910d7b2f4c147359a82d50ef.gif"
+          <img src="https://media.giphy.com/media/jAYUbVXgESSti/giphy.gif"
             alt="loading" />
         </div>
       )
@@ -91,7 +89,6 @@ class App extends Component {
         />
       )
     } else {
-      console.log('~~~ Content rendering.  this.state.user.id is: ' + this.state.user.id);
       return (
         <div>
         <Content logout={this.logout.bind(this)} user={this.state.user} />
@@ -99,12 +96,6 @@ class App extends Component {
       )
     }
   }
-
-  // renderCorpList(){
-  //   console.log('this is the user id being passed', this.state.user.id);
-      
-  //    <CorpList user={this.state.user.id} />
-  // }
 
   render() {
     return (

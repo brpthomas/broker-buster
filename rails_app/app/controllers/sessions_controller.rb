@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       # if the password is correct
       if @user.authenticate(params[:password])
         # send back a json with the information we want to give to the client
-	       render :json => @user.json_hash
+	       render :json => @user
       else # if the password is incorrect
         render status: :unauthorized, :json => {
           :password => ["Incorrect Password"]

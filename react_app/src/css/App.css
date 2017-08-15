@@ -1,18 +1,70 @@
 body, html{
-  background-color: #FAFAFA;
+    font-family: 'Quicksand', sans-serif;
+  background-color: dimgrey;
+    background-image: url("https://images.angelpub.com/2015/36/33115/tulipsmania.jpg");
+    background-size:cover;
 }
 .App {
   text-align: center;
 }
+.single-bond-info{
 
-.auth-form, .content{
+}
+
+.auth-form {
   width: 100vw;
   max-width: 600px;
   margin: 20px auto;
   padding: 30px;
   background-color: #FFF;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  opacity:.75;
+  font-family: 'Quicksand', sans-serif;
+
 }
+.content{
+  font-family: 'Quicksand', sans-serif;
+  border-style: solid;
+  border-width: 2px 10px 4px 20px;
+  
+}
+.profile-image {
+  align-self: center;
+  border-radius: 50%;
+  height: 300px;
+  width: 400px;
+  margin-top: 20px;
+}
+.bond-info {
+    border-style: dotted;
+  border-width: 2px;
+
+}
+.buy-corp{
+  color:white;
+  font-size: 20px;
+}
+
+.side-bar {
+  width: 30vw;
+  height: 110vh;
+  background-color: brown;
+  opacity:.7;
+  float: left;
+  color:white;
+
+
+}
+
+.bonds-list{
+  float:left;
+  text-align: center;
+  border-bottom: 2px;
+  border-color:solid black;
+  font:black;
+}
+
+
 
 h2{
   font-weight: 300;
@@ -27,6 +79,9 @@ h2{
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+.log-out{
+  color:white;
 }
 
 label{
@@ -45,6 +100,7 @@ input{
 .form-buttons{
   margin: 30px 0 16px;
   text-align: right;
+  color:white;
 }
 
 button{

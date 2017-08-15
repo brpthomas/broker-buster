@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :corps
+  
   # we want the user to have an encrypted password
   has_secure_password
 
@@ -9,8 +11,8 @@ class User < ApplicationRecord
   before_validation :downcase_email
 
   # make sure there is a password confirmation
-  validates :password_confirmation, presence: true
-  validates :password, confirmation: true, presence: true
+  # validates :password_confirmation, presence: true
+  # validates :password, confirmation: true, presence: true
 
   # make sure the email is the correct format, unique, and present
   validates :email,
@@ -29,6 +31,8 @@ class User < ApplicationRecord
       :name => self.name,
       :email => self.email,
       :token => self.auth_token,
+      :balance => self.balance,
+      :image_url => self.image_url,
       :id => self.id
     }
   end
